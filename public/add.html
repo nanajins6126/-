@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>テストタイトル</title>
+	</head>
+	<body>
+		<h1>すたまっけ</h1>
+		<table border="1">
+			<thead>
+			<tr>
+				<th>年月日</th>
+				<th>時刻</th>
+				<th>腹痛</th>
+				<th>排便時間(時:分)</th>
+				<th>形状</th>
+				<th>排便後の状態</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><input type="date" id="name" name="name"></td>
+				<td><input type="time" id="appt" name="appt"></td>
+				<td><input type="checkbox" id="scales" name="scales"></td>
+				<td><input type="time" id="tappt" name="tappt"></td>
+				<td>
+					<select name="unkei">
+						<option value="1">硬便</option>
+						<option value="2">軟便</option>
+						<option value="3">下痢</option>
+					</select name="page">
+				</td>
+				<td>
+					<select name="keika">
+						<option value="1">楽になった</option>
+						<option value="2">変わらない</option>
+						<option value="3">悪化した</option>
+					</select name="page">
+				</td>
+			</tr>
+		</table>
+		<input type="button" onclick="location.href='./index.html'" value="キャンセル">
+		<button type="button">追加</button>
+	</body>
+</html>
