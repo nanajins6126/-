@@ -5,6 +5,7 @@
 	</head>
 	<body>
 		<h1>すたまっけ</h1>
+		<form class="form-section">
 		<table border="1">
 			<thead>
 			<tr>
@@ -20,25 +21,36 @@
 			<tr>
 				<td><input type="date" id="name" name="name"></td>
 				<td><input type="time" id="appt" name="appt"></td>
-				<td><input type="checkbox" id="scales" name="scales"></td>
+				<td>
+					<select id="scales" name="scales">
+					<option hidden>選択してください</option>
+					<option value="あり">あり</option>
+					<option value="なし">なし</option>
+					</select name="page">
+				</td>
 				<td><input type="time" id="tappt" name="tappt"></td>
 				<td>
-					<select name="unkei">
-						<option value="1">硬便</option>
-						<option value="2">軟便</option>
-						<option value="3">下痢</option>
+					<select id="unkei" name="unkei">
+						<option hidden>選択してください</option>
+						<option value="硬便">硬便</option>
+						<option value="軟便">軟便</option>
+						<option value="下痢">下痢</option>
 					</select name="page">
 				</td>
 				<td>
-					<select name="keika">
-						<option value="1">楽になった</option>
-						<option value="2">変わらない</option>
-						<option value="3">悪化した</option>
+					<select id="keika" name="keika">
+						<option hidden>選択してください</option>
+						<option value="楽になった">楽になった</option>
+						<option value="変わらない">変わらない</option>
+						<option value="悪化した">悪化した</option>
 					</select name="page">
 				</td>
 			</tr>
 		</table>
 		<input type="button" onclick="location.href='./index.html'" value="キャンセル">
-		<button type="button">追加</button>
+		<button type="submit">追加</button>
+		</form>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="add.js"></script>
 	</body>
 </html>
